@@ -1,0 +1,16 @@
+---
+title: Le Wagon - Middleman - Team
+---
+
+<div id="team">
+  <h2 class="text-center">This template is built with <i class="fa fa-heart"></i> by</h2>
+  <ul class="list-inline text-center">
+  <% data.users.each do |username| %>
+    <li>
+      <%= image_tag "#{username.name}.jpg", class: "img-circle", width: "120" %>
+      <h3><%= username.name.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
+</div>
+
